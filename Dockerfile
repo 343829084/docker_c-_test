@@ -1,9 +1,14 @@
 FROM ubuntu:latest
-FROM g++:latest
-FROM make:latest
-FROM libboost-all-dev:latest
 
 MAINTAINER jd_gong "343829084@qq.com"
+
+RUN apt-get unpdate
+
+RUN apt-get install g++
+
+RUN apt-get install make
+
+RUN apt-get install libboost-all-dev
 
 COPY src/* /usr/src/myapp/
 
