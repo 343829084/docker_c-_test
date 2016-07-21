@@ -5,10 +5,10 @@ MAINTAINER jd_gong "343829084@qq.com"
 
 RUN apt-get update
 
-RUN apt-get install g++
-RUN apt-get install make
+RUN apt-get install -y g++
+RUN apt-get install -y make
 
-RUN apt-get install libboost-all-dev
+RUN apt-get install -y libboost-all-dev
 
 COPY src/* /usr/src/myapp/
 
