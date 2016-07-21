@@ -1,10 +1,9 @@
 FROM ubuntu:latest
+FROM g++:latest
 
 MAINTAINER jd_gong "343829084@qq.com"
 
 RUN apt-get update
-
-RUN apt-get install g++
 
 RUN apt-get install make
 
