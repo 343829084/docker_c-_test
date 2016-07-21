@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 MAINTAINER jd_gong "343829084@qq.com"
 
-RUN apt-get unpdate
+RUN apt-get update
 
 RUN apt-get install g++
 
