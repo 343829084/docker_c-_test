@@ -3,7 +3,7 @@ BIN = server
 all: $(BIN)
 
 $(BIN): server.cpp
-	g++ -g -Wall -lboost_system -o $@ $^
+	g++ -g -Wall -o $@ $^  -lboost_system
 
 clean:
 	-rm $(BIN)
